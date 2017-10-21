@@ -59,7 +59,7 @@ var exec = function (cmd, opts, cb) {
       port: opts.port || 22,
       tryKeyboard: !!opts.password,
       privateKey: key,
-      allowAgentFwd: opts.allowAgentFwd,
+      agentForward: opts.agentForward,
       agent: process.env.SSH_AUTH_SOCK || opts.agent,
       hostHash: opts.hostHash || 'md5',
       hostVerifier: verifier,
