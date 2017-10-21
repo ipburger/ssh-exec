@@ -2,13 +2,17 @@
 
 Execute a script over ssh using Node.JS and pipe to and from it
 
-It is available through npm
-
 ```
 npm install git+https://github.com/ipburger/ssh-exec.js.git
 ```
 
-It is written in plain Javascript and uses [ssh2](https://github.com/mscdex/ssh2) for all the heavy lifting.
+This fork merges the most helpful commits across github on ssh-exec
+
+## Latest Fixes
+
+- Occasional truncated stdout 
+- ssh agent forwarding
+
 
 
 ## Usage
